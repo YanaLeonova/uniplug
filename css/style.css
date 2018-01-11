@@ -1,0 +1,189 @@
+/*стили - пункты верхнего меню*/
+.main-item {
+    font-size: 15px;
+    padding: 30px 12px !important;
+}
+
+/**/
+
+/*иконка поиска*/
+.search {
+    padding: 25px 15px !important;
+}
+
+.search > img {
+    width: 30px;
+    height: 30px;
+}
+
+/**/
+
+/*уменьшение размеров пунктов в верхнем меню при уменьшении экрана*/
+@media (max-width: 767px) {
+    .main-item {
+        padding: 17px 8px !important;
+    }
+
+    .search {
+        padding: 12px 10px !important;
+    }
+}
+
+/**/
+
+/*выпадающий список второго уровня*/
+.dropdown:hover {
+    background-color: #222222;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    background-color: #222222;
+    color: white;
+}
+
+.dropdown-menu > li > a {
+    color: white;
+    font-size: 12px;
+}
+
+/*растягиваю меню второго уровня на всю ширину экрана при разрешении менее 768px*/
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 100%;
+    }
+}
+
+/**/
+
+/*логотип в начале верхнего меню */
+.logo {
+    color: #2295b6 !important;
+    padding: 5px 0 !important;
+    font-size: 12px;
+    border: 0.5px #a4a4a4 solid;
+}
+
+.navbar-header {
+    margin: 20px 20px 39px 0 !important;
+}
+
+/**/
+
+/*стиль в основном тексте*/
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.text {
+    text-align: center;
+}
+
+.text > p {
+    padding: 0 217px 40px 217px;
+}
+
+article > h3 {
+    padding-top: 30px;
+}
+
+/*уменьшение отступов у абзаца в основном тексте при уменьшении экрана*/
+@media (max-width: 1200px) and (min-width: 992px) {
+    .text > p {
+        padding: 0 142px 35px 142px;
+    }
+}
+
+/*удаление отступов у абзаца при уменьшении экрана*/
+@media (max-width: 991px) {
+    .text > p {
+        padding: 0;
+    }
+}
+
+/**/
+
+/*положение картинок по отношению к тексту в блоках*/
+.img-right {
+    float: right;
+    margin-top: 20px;
+}
+
+.img-left {
+    float: left;
+    margin-top: 20px;
+}
+
+.text-right {
+    margin-right: 100px;
+}
+
+.text-left {
+    margin-left: 100px;
+}
+
+/**/
+
+/*подвал*/
+/*цвет текста и верхний отступ от основого текста*/
+footer {
+    color: white;
+    margin-top: 200px;
+}
+
+/*удаление нижнего отступа*/
+footer > .navbar {
+    margin-bottom: 0 !important;
+}
+
+/*удаление точек у li и удаление отступа*/
+.footer-menu {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*стиль ссылок в списках*/
+.footer-menu > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/*стиль списков*/
+.footer-menu > li {
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.navigation, .follow, .contacts {
+    text-align: left;
+    padding-top: 15px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+/**/
+
+/*уменьшение отступов в подвале при уменьшении экрана*/
+@media (max-width: 1200px) {
+    footer {
+        margin-top: 100px;
+    }
+
+    h4 {
+        margin-bottom: 15px;
+    }
+
+    .footer-menu > li {
+        padding-bottom: 0;
+    }
+}
+
+/**/
+
+
+
